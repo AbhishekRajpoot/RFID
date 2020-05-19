@@ -4,7 +4,7 @@ from mfrc522 import SimpleMFRC522
 reader = SimpleMFRC522()
 
 try:
-    while True:
+    while True: # for multiple tags
         name = input("Enter Product Name:")
         print("Hold a tag near the reader")
         reader.write(name)
